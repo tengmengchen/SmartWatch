@@ -1,0 +1,7 @@
+.vscode
+LVGL/
+ST7789V 2.8CTC/
+*.zip
+*.pdf
+software/
+lv_sim_vscode_win/

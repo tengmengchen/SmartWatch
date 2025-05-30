@@ -1,0 +1,70 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.15
+Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information:  ,  , LIC=WHYH9-4T2G3-DYUV3-AAZ1M-JFC8T-YWI3I
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Standard  Version: 5.15.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 update 2 (build 169)
+Assembler:       Armasm.exe V5.05 update 2 (build 169)
+Linker/Locator:  ArmLink.exe V5.05 update 2 (build 169)
+Library Manager: ArmAr.exe V5.05 update 2 (build 169)
+Hex Converter:   FromElf.exe V5.05 update 2 (build 169)
+CPU DLL:         SARMCM3.DLL V5.15.0
+Dialog DLL:      DCM.DLL V1.13.2.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V2.0.15.0_KEIL
+Dialog DLL:      TCM.DLL V1.14.5.0
+ 
+<h2>Project:</h2>
+D:\BaiduNetdiskDownload\ov-watch\tmc\User\test.uvprojx
+Project File Date:  05/29/2025
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.05 update 2 (build 169)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling MPU6050.c...
+.\BSP\Inc\MPU6050.h(9): warning:  #1295-D: Deprecated declaration MPU6050_Wake - give arg types
+  uint8_t MPU6050_Wake();
+.\BSP\Inc\MPU6050.h(13): warning:  #1295-D: Deprecated declaration MPU6050_SelfTest_Enable - give arg types
+  uint8_t MPU6050_SelfTest_Enable();
+.\BSP\Inc\MPU6050.h(14): warning:  #1295-D: Deprecated declaration MPU6050_Print_RegState - give arg types
+  uint8_t MPU6050_Print_RegState();
+BSP\Src\MPU6050.c(35): warning:  #1295-D: Deprecated declaration Sensor_IIC_Init - give arg types
+  extern void Sensor_IIC_Init();
+BSP\Src\MPU6050.c(385): warning:  #1-D: last line of file ends without a newline
+  }
+BSP\Src\MPU6050.c: 5 warnings, 0 errors
+linking...
+Program Size: Code=225382 RO-data=128954 RW-data=1416 ZI-data=101608  
+FromELF: creating hex file...
+After Build - User command #1: fromelf --bin --output ./Objects/test.bin ./Objects/test.axf
+".\Objects\test.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F4xx_DFP.2.17.1.pack
+                Keil::Device:Startup:2.6.3
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 2.6.3
+
+<h2>Collection of Component include folders:</h2>
+  D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE
+  D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: Keil::Device:Startup:2.6.3
+      Source file:   MDK\Device\Source\ARM\STM32F411xx_OPT.s
+      Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
+      Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f411xe.s
+      Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
+</pre>
+</body>
+</html>
