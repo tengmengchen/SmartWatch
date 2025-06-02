@@ -51,8 +51,10 @@
 .\objects\hwdataaccess.o: .\FreeRTOS\Source\include\list.h
 .\objects\hwdataaccess.o: .\Core\Inc\Usart.h
 .\objects\hwdataaccess.o: .\User\main.h
-.\objects\hwdataaccess.o: .\System\delay.h
+.\objects\hwdataaccess.o: .\BSP\Inc\LCD\lcd.h
 .\objects\hwdataaccess.o: .\System\sys.h
+.\objects\hwdataaccess.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\hwdataaccess.o: .\System\delay.h
 .\objects\hwdataaccess.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\hwdataaccess.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\hwdataaccess.o: .\User\Tasks\include\AHT21_task.h

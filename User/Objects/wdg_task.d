@@ -50,5 +50,7 @@
 .\objects\wdg_task.o: .\FreeRTOS\Source\include\list.h
 .\objects\wdg_task.o: .\Core\Inc\Usart.h
 .\objects\wdg_task.o: .\User\main.h
-.\objects\wdg_task.o: .\System\delay.h
+.\objects\wdg_task.o: .\BSP\Inc\LCD\lcd.h
 .\objects\wdg_task.o: .\System\sys.h
+.\objects\wdg_task.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\wdg_task.o: .\System\delay.h

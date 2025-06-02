@@ -174,8 +174,10 @@
 .\objects\calendarpage.o: .\FreeRTOS\Source\include\list.h
 .\objects\calendarpage.o: .\Core\Inc\Usart.h
 .\objects\calendarpage.o: .\User\main.h
-.\objects\calendarpage.o: .\System\delay.h
+.\objects\calendarpage.o: .\BSP\Inc\LCD\lcd.h
 .\objects\calendarpage.o: .\System\sys.h
+.\objects\calendarpage.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\calendarpage.o: .\System\delay.h
 .\objects\calendarpage.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\calendarpage.o: .\User\Tasks\include\AHT21_task.h
 .\objects\calendarpage.o: .\BSP\Inc\AHT21.h

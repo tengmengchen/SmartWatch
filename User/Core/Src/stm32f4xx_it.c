@@ -169,6 +169,25 @@ void DebugMon_Handler(void)
   /* USER CODE END DebugMonitor_IRQn 1 */
 }
 
+extern void Enter_Stop_Mode(void);
+extern void Exit_Stop_Mode(void);
+void EXTI4_IRQHandler(void)
+{
+    // 检查是否是PA4中断
+    if(__HAL_GPIO_EXTI_GET_IT(GPIO_PIN_4) != RESET)
+    {
+        __HAL_GPIO_EXTI_CLEAR_IT(GPIO_PIN_4); // 清除中断标志
+        if(!(SCB->SCR & SCB_SCR_SLEEPDEEP_Msk))
+        {
+          Enter_Stop_Mode();
+        }
+        else
+        {
+          Exit_Stop_Mode();
+        }
+    }
+}
+
 extern int EI_Flag;
 extern TIM_HandleTypeDef htim2;
 void EXTI9_5_IRQHandler(void)

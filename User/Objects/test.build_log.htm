@@ -22,12 +22,228 @@ Dialog DLL:      TCM.DLL V1.14.5.0
  
 <h2>Project:</h2>
 D:\BaiduNetdiskDownload\ov-watch\tmc\User\test.uvprojx
-Project File Date:  05/29/2025
+Project File Date:  05/30/2025
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.05 update 2 (build 169)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
+compiling main.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+.\BSP\Inc\LSM303.h(6): warning:  #1295-D: Deprecated declaration LSM303_Init - give arg types
+  uint8_t LSM303_Init();
+.\BSP\Inc\EM7028.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\BSP\Inc\BLE.h(7): warning:  #1295-D: Deprecated declaration BLE_Init - give arg types
+  uint8_t BLE_Init();
+.\BSP\Inc\BLE.h(8): warning:  #1295-D: Deprecated declaration BLE_Enable - give arg types
+  uint8_t BLE_Enable();
+.\BSP\Inc\BLE.h(9): warning:  #1295-D: Deprecated declaration BLE_DeEnable - give arg types
+  uint8_t BLE_DeEnable();
+.\BSP\Inc\MPU6050.h(9): warning:  #1295-D: Deprecated declaration MPU6050_Wake - give arg types
+  uint8_t MPU6050_Wake();
+.\BSP\Inc\MPU6050.h(13): warning:  #1295-D: Deprecated declaration MPU6050_SelfTest_Enable - give arg types
+  uint8_t MPU6050_SelfTest_Enable();
+.\BSP\Inc\MPU6050.h(14): warning:  #1295-D: Deprecated declaration MPU6050_Print_RegState - give arg types
+  uint8_t MPU6050_Print_RegState();
+.\BSP\Inc\KEY.h(7): warning:  #1295-D: Deprecated declaration KEY_Init - give arg types
+  uint8_t KEY_Init();
+.\BSP\Inc\KEY.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+.\User\Tasks\include\watchtask.h(12): warning:  #1295-D: Deprecated declaration start_task - give arg types
+  void start_task();
+User\main.c(72): warning:  #223-D: function "Low_Power_Init" declared implicitly
+      Low_Power_Init();
+User\main.c(49): warning:  #177-D: variable "ret" was declared but never referenced
+    uint8_t ret;
+User\main.c(208): warning:  #550-D: variable "ret" was set but never used
+     uint8_t ret, PID, i = 0;
+User\main.c(208): warning:  #177-D: variable "i" was declared but never referenced
+     uint8_t ret, PID, i = 0;
+User\main.c: 18 warnings, 0 errors
+compiling stm32f4xx_it.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Core\Src\stm32f4xx_it.c: 3 warnings, 0 errors
+compiling Usart.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Core\Src\Usart.c: 3 warnings, 0 errors
+compiling i2c.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Core\Src\i2c.c: 3 warnings, 0 errors
+compiling spi.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Core\Src\spi.c: 3 warnings, 0 errors
+compiling tim.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Core\Src\tim.c: 3 warnings, 0 errors
+compiling dma.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Core\Src\dma.c: 3 warnings, 0 errors
+compiling RTC.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Core\Src\RTC.c: 3 warnings, 0 errors
+compiling pwr.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Core\Src\pwr.c(55): warning:  #1-D: last line of file ends without a newline
+  }
+Core\Src\pwr.c: 4 warnings, 0 errors
+compiling printf.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+System\printf.c(205): warning:  #68-D: integer conversion resulted in a change of sign
+        int res = _vsnprintf(
+ULL, -1, s, vl);
+System\printf.c: 4 warnings, 0 errors
+compiling BL24C02.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+BSP\Src\BL24C02.c: 3 warnings, 0 errors
+compiling WDG.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+BSP\Src\WDG.c: 3 warnings, 0 errors
+compiling AHT21.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+BSP\Src\AHT21.c: 3 warnings, 0 errors
+compiling Sensor.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+BSP\Src\Sensor.c: 3 warnings, 0 errors
+compiling SPL06.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+BSP\Src\SPL06.c(360): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      Tcomp = (float)c0 * 0.5 + (float)c1 * (float)(Traw_sc) / KT;
+BSP\Src\SPL06.c(360): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      Tcomp = (float)c0 * 0.5 + (float)c1 * (float)(Traw_sc) / 
+T;
+BSP\Src\SPL06.c(370): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      Praw_src = (float)Praw / 
+P;
+BSP\Src\SPL06.c(371): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      Traw_src = (float)Traw / 
+T;
+BSP\Src\SPL06.c(380): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      tmp = (1.0 - powf(Pcomp / (float)101325, 0.1903));
+BSP\Src\SPL06.c(381): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      Altitude = 44330.0 * tmp;
+BSP\Src\SPL06.c: 9 warnings, 0 errors
+compiling lcd.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+BSP\Src\LCD\lcd.c(60): warning:  #177-D: variable "i" was declared but never referenced
+        u16 i,j,width,height; 
+BSP\Src\LCD\lcd.c(60): warning:  #177-D: variable "j" was declared but never referenced
+        u16 i,j,width,height; 
+BSP\Src\LCD\lcd.c: 5 warnings, 0 errors
+compiling lcd_init.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+BSP\Src\LCD\lcd_init.c: 3 warnings, 0 errors
+compiling CST816.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+BSP\Src\CST816.c: 3 warnings, 0 errors
+compiling EM7028.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+.\BSP\Inc\EM7028.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+BSP\Src\EM7028.c(19): warning:  #1295-D: Deprecated declaration Sensor_IIC_Init - give arg types
+  extern void Sensor_IIC_Init();
+BSP\Src\EM7028.c: 5 warnings, 0 errors
 compiling MPU6050.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
 .\BSP\Inc\MPU6050.h(9): warning:  #1295-D: Deprecated declaration MPU6050_Wake - give arg types
   uint8_t MPU6050_Wake();
 .\BSP\Inc\MPU6050.h(13): warning:  #1295-D: Deprecated declaration MPU6050_SelfTest_Enable - give arg types
@@ -36,14 +252,225 @@ compiling MPU6050.c...
   uint8_t MPU6050_Print_RegState();
 BSP\Src\MPU6050.c(35): warning:  #1295-D: Deprecated declaration Sensor_IIC_Init - give arg types
   extern void Sensor_IIC_Init();
-BSP\Src\MPU6050.c(385): warning:  #1-D: last line of file ends without a newline
+BSP\Src\MPU6050.c(384): warning:  #1-D: last line of file ends without a newline
   }
-BSP\Src\MPU6050.c: 5 warnings, 0 errors
+BSP\Src\MPU6050.c: 8 warnings, 0 errors
+compiling BLE.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+.\BSP\Inc\BLE.h(7): warning:  #1295-D: Deprecated declaration BLE_Init - give arg types
+  uint8_t BLE_Init();
+.\BSP\Inc\BLE.h(8): warning:  #1295-D: Deprecated declaration BLE_Enable - give arg types
+  uint8_t BLE_Enable();
+.\BSP\Inc\BLE.h(9): warning:  #1295-D: Deprecated declaration BLE_DeEnable - give arg types
+  uint8_t BLE_DeEnable();
+BSP\Src\BLE.c(18): warning:  #940-D: missing return statement at end of non-void function "BLE_Init"
+  }
+BSP\Src\BLE.c(36): warning:  #1-D: last line of file ends without a newline
+  }
+BSP\Src\BLE.c: 8 warnings, 0 errors
+compiling LSM303.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+.\BSP\Inc\LSM303.h(6): warning:  #1295-D: Deprecated declaration LSM303_Init - give arg types
+  uint8_t LSM303_Init();
+BSP\Src\LSM303.c(30): warning:  #1295-D: Deprecated declaration Sensor_IIC_Init - give arg types
+  extern void Sensor_IIC_Init();
+BSP\Src\LSM303.c(43): warning:  #550-D: variable "ret" was set but never used
+      uint8_t ret, rec_data;
+BSP\Src\LSM303.c(163): warning:  #1-D: last line of file ends without a newline
+  }
+BSP\Src\LSM303.c: 7 warnings, 0 errors
+compiling KEY.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+.\BSP\Inc\KEY.h(7): warning:  #1295-D: Deprecated declaration KEY_Init - give arg types
+  uint8_t KEY_Init();
+.\BSP\Inc\KEY.h(9): warning:  #1-D: last line of file ends without a newline
+  #endif
+BSP\Src\KEY.c(33): warning:  #940-D: missing return statement at end of non-void function "TIM2_Init"
+  }
+BSP\Src\KEY.c(50): warning:  #1-D: last line of file ends without a newline
+  }
+BSP\Src\KEY.c: 7 warnings, 0 errors
+compiling lv_port_disp.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Middlewares\LVGL\GUI\porting\lv_port_disp.c: 3 warnings, 0 errors
+compiling lv_port_indev.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Middlewares\LVGL\GUI\porting\lv_port_indev.c: 3 warnings, 0 errors
+compiling HomePage.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(82): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%2d",ui_TimeHourValue);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(83): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(ui_TimeHourLabel, value_strbuf);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(103): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%02d",ui_TimeMinuteValue);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(104): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(ui_TimeMinuteLabel, value_strbuf);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(145): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%2d%%",ui_BatArcValue);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(146): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(ui_BatNumLabel, value_strbuf);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(155): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%2d-%02d",ui_DateMonthValue,ui_DateDayValue);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(156): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(ui_DateLabel, value_strbuf);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(200): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%d",ui_StepNumValue);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(201): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(ui_StepNumLabel, value_strbuf);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(254): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%d",ui_HomePageTempValue);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(255): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(ui_TempNumLabel, value_strbuf);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(296): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%d",ui_HomePageHumiValue);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(297): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(ui_HumiNumLabel, value_strbuf);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(339): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "char *restrict"
+      sprintf(value_strbuf,"%d", 99);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(340): warning:  #167-D: argument of type "uint8_t *" is incompatible with parameter of type "const char *"
+      lv_label_set_text(ui_HRNumLabel, value_strbuf);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c(564): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+              dep = (ui_HomePageAltitude / 5000.0) * 100;
+Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c: 20 warnings, 0 errors
+compiling MenuPage.c...
+Middlewares\LVGL\GUI_APP\GUI_APP\src\../inc/../../FUNC/inc/Computer.h(5): warning:  #1295-D: Deprecated declaration in2post - give arg types
+  float in2post();
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Middlewares\LVGL\GUI_APP\GUI_APP\src\MenuPage.c: 4 warnings, 0 errors
+compiling CalendarPage.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Middlewares\LVGL\GUI_APP\GUI_APP\src\CalendarPage.c(20): warning:  #940-D: missing return statement at end of non-void function "Calender_Scr_Event"
+  }
+Middlewares\LVGL\GUI_APP\GUI_APP\src\CalendarPage.c(40): warning:  #167-D: argument of type "lv_event_cb_t (*)(lv_event_t *)" is incompatible with parameter of type "lv_event_cb_t"
+      lv_obj_add_event_cb(Calendar_Scr, Calender_Scr_Event, LV_EVENT_ALL, 
+ULL);
+Middlewares\LVGL\GUI_APP\GUI_APP\src\CalendarPage.c(42): warning:  #1-D: last line of file ends without a newline
+  }
+Middlewares\LVGL\GUI_APP\GUI_APP\src\CalendarPage.c: 6 warnings, 0 errors
+compiling HWDataAccess.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+Middlewares\LVGL\GUI_APP\FUNC\src\HWDataAccess.c(66): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      Altitude = SPL06_GET_Altitude() / 10.0;
+Middlewares\LVGL\GUI_APP\FUNC\src\HWDataAccess.c: 4 warnings, 0 errors
+compiling AHT21_task.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+User\Tasks\AHT21_task.c: 3 warnings, 0 errors
+compiling LVGL_task.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+User\Tasks\LVGL_task.c: 3 warnings, 0 errors
+compiling SPL06_task.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+User\Tasks\SPL06_task.c(41): warning:  #1-D: last line of file ends without a newline
+  }
+User\Tasks\SPL06_task.c(7): warning:  #177-D: variable "ID" was declared but never referenced
+    uint8_t ID, ret;
+User\Tasks\SPL06_task.c(7): warning:  #177-D: variable "ret" was declared but never referenced
+    uint8_t ID, ret;
+User\Tasks\SPL06_task.c(8): warning:  #177-D: variable "str" was declared but never referenced
+    char str[30];
+User\Tasks\SPL06_task.c(9): warning:  #177-D: variable "Altitude" was declared but never referenced
+    float Altitude;
+User\Tasks\SPL06_task.c: 8 warnings, 0 errors
+compiling watchtask.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+.\BSP\Inc\LSM303.h(6): warning:  #1295-D: Deprecated declaration LSM303_Init - give arg types
+  uint8_t LSM303_Init();
+.\User\Tasks\include\watchtask.h(12): warning:  #1295-D: Deprecated declaration start_task - give arg types
+  void start_task();
+User\Tasks\watchtask.c(119): warning:  #1-D: last line of file ends without a newline
+  //  }
+User\Tasks\watchtask.c: 6 warnings, 0 errors
+compiling WDG_task.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+User\Tasks\WDG_task.c(10): warning:  #1-D: last line of file ends without a newline
+  }
+User\Tasks\WDG_task.c: 4 warnings, 0 errors
+compiling LSM303_task.c...
+.\BSP\Inc\LCD\lcd_init.h(56): warning:  #1295-D: Deprecated declaration Lcd_BackLight_init - give arg types
+  void Lcd_BackLight_init();
+.\BSP\Inc\LCD\lcd_init.h(57): warning:  #1295-D: Deprecated declaration Lcd_BackLight_On - give arg types
+  void Lcd_BackLight_On();
+.\BSP\Inc\LCD\lcd_init.h(58): warning:  #1295-D: Deprecated declaration Lcd_BackLight_Off - give arg types
+  void Lcd_BackLight_Off();
+.\BSP\Inc\LSM303.h(6): warning:  #1295-D: Deprecated declaration LSM303_Init - give arg types
+  uint8_t LSM303_Init();
+User\Tasks\LSM303_task.c: 4 warnings, 0 errors
 linking...
-Program Size: Code=225382 RO-data=128954 RW-data=1416 ZI-data=101608  
+Program Size: Code=227502 RO-data=129106 RW-data=1416 ZI-data=101632  
 FromELF: creating hex file...
 After Build - User command #1: fromelf --bin --output ./Objects/test.bin ./Objects/test.axf
-".\Objects\test.axf" - 0 Error(s), 5 Warning(s).
+".\Objects\test.axf" - 0 Error(s), 182 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -60,9 +487,9 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: Keil::Device:Startup:2.6.3
-      Source file:   MDK\Device\Source\ARM\STM32F411xx_OPT.s
       Source file:   MDK\Device\Source\ARM\STM32F4xx_OTP.s
       Include file:  Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h
+      Source file:   MDK\Device\Source\ARM\STM32F411xx_OPT.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\arm\startup_stm32f411xe.s
       Source file:   Drivers\CMSIS\Device\ST\STM32F4xx\Source\Templates\system_stm32f4xx.c
 </pre>

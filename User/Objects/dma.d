@@ -49,3 +49,6 @@
 .\objects\dma.o: .\FreeRTOS\Source\include\list.h
 .\objects\dma.o: .\Core\Inc\Usart.h
 .\objects\dma.o: .\User\main.h
+.\objects\dma.o: .\BSP\Inc\LCD\lcd.h
+.\objects\dma.o: .\System\sys.h
+.\objects\dma.o: .\BSP\Inc\LCD\lcd_init.h

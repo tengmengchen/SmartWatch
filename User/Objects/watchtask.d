@@ -49,11 +49,13 @@
 .\objects\watchtask.o: .\FreeRTOS\Source\include\list.h
 .\objects\watchtask.o: .\Core\Inc\Usart.h
 .\objects\watchtask.o: .\User\main.h
+.\objects\watchtask.o: .\BSP\Inc\LCD\lcd.h
+.\objects\watchtask.o: .\System\sys.h
+.\objects\watchtask.o: .\BSP\Inc\LCD\lcd_init.h
 .\objects\watchtask.o: .\User\Tasks\include\AHT21_task.h
 .\objects\watchtask.o: .\BSP\Inc\AHT21.h
 .\objects\watchtask.o: .\Core\Inc\i2c.h
 .\objects\watchtask.o: .\System\delay.h
-.\objects\watchtask.o: .\System\sys.h
 .\objects\watchtask.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\watchtask.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\watchtask.o: .\User\Tasks\include\AHT21_task.h
@@ -190,4 +192,5 @@
 .\objects\watchtask.o: .\Middlewares\LVGL\GUI_APP\demos\widgets\../lv_demos.h
 .\objects\watchtask.o: .\User\Tasks\include\WDG_task.h
 .\objects\watchtask.o: .\BSP\Inc\WDG.h
-.\objects\watchtask.o: .\BSP\Inc\MPU6050.h
+.\objects\watchtask.o: .\User\Tasks\include\LSM303_task.h
+.\objects\watchtask.o: .\BSP\Inc\LSM303.h

@@ -50,8 +50,10 @@
 .\objects\aht21.o: .\FreeRTOS\Source\include\list.h
 .\objects\aht21.o: .\Core\Inc\Usart.h
 .\objects\aht21.o: .\User\main.h
-.\objects\aht21.o: .\System\delay.h
+.\objects\aht21.o: .\BSP\Inc\LCD\lcd.h
 .\objects\aht21.o: .\System\sys.h
+.\objects\aht21.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\aht21.o: .\System\delay.h
 .\objects\aht21.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\aht21.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\aht21.o: .\User\Tasks\include\AHT21_task.h

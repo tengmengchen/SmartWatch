@@ -49,5 +49,7 @@
 .\objects\i2c.o: .\FreeRTOS\Source\include\list.h
 .\objects\i2c.o: .\Core\Inc\Usart.h
 .\objects\i2c.o: .\User\main.h
-.\objects\i2c.o: .\System\delay.h
+.\objects\i2c.o: .\BSP\Inc\LCD\lcd.h
 .\objects\i2c.o: .\System\sys.h
+.\objects\i2c.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\i2c.o: .\System\delay.h

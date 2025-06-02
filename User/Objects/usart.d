@@ -48,3 +48,6 @@
 .\objects\usart.o: .\FreeRTOS\Source\include\task.h
 .\objects\usart.o: .\FreeRTOS\Source\include\list.h
 .\objects\usart.o: .\Core\Inc\Usart.h
+.\objects\usart.o: .\BSP\Inc\LCD\lcd.h
+.\objects\usart.o: .\System\sys.h
+.\objects\usart.o: .\BSP\Inc\LCD\lcd_init.h

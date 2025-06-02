@@ -50,6 +50,8 @@
 .\objects\mpu6050.o: .\FreeRTOS\Source\include\list.h
 .\objects\mpu6050.o: .\Core\Inc\Usart.h
 .\objects\mpu6050.o: .\User\main.h
-.\objects\mpu6050.o: .\System\delay.h
+.\objects\mpu6050.o: .\BSP\Inc\LCD\lcd.h
 .\objects\mpu6050.o: .\System\sys.h
+.\objects\mpu6050.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\mpu6050.o: .\System\delay.h
 .\objects\mpu6050.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

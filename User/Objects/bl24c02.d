@@ -50,5 +50,7 @@
 .\objects\bl24c02.o: .\FreeRTOS\Source\include\list.h
 .\objects\bl24c02.o: .\Core\Inc\Usart.h
 .\objects\bl24c02.o: .\User\main.h
-.\objects\bl24c02.o: .\System\delay.h
+.\objects\bl24c02.o: .\BSP\Inc\LCD\lcd.h
 .\objects\bl24c02.o: .\System\sys.h
+.\objects\bl24c02.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\bl24c02.o: .\System\delay.h

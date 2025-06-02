@@ -7,7 +7,7 @@
 #include "HWDataAccess.h"
 #include "WDG_task.h"
 #include "SPL06_task.h"
-#include "MPU6050.h"
+#include "LSM303_task.h"
 
 void start_task();
 

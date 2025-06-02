@@ -48,6 +48,9 @@
 .\objects\stm32f4xx_it.o: .\FreeRTOS\Source\include\list.h
 .\objects\stm32f4xx_it.o: .\Core\Inc\Usart.h
 .\objects\stm32f4xx_it.o: .\User\main.h
+.\objects\stm32f4xx_it.o: .\BSP\Inc\LCD\lcd.h
+.\objects\stm32f4xx_it.o: .\System\sys.h
+.\objects\stm32f4xx_it.o: .\BSP\Inc\LCD\lcd_init.h
 .\objects\stm32f4xx_it.o: .\Core\Inc\stm32f4xx_it.h
 .\objects\stm32f4xx_it.o: .\Middlewares\LVGL\GUI\lvgl\lvgl.h
 .\objects\stm32f4xx_it.o: .\Middlewares\LVGL\GUI\lvgl\src/misc/lv_log.h

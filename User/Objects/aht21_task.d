@@ -49,10 +49,12 @@
 .\objects\aht21_task.o: .\FreeRTOS\Source\include\list.h
 .\objects\aht21_task.o: .\Core\Inc\Usart.h
 .\objects\aht21_task.o: .\User\main.h
+.\objects\aht21_task.o: .\BSP\Inc\LCD\lcd.h
+.\objects\aht21_task.o: .\System\sys.h
+.\objects\aht21_task.o: .\BSP\Inc\LCD\lcd_init.h
 .\objects\aht21_task.o: .\BSP\Inc\AHT21.h
 .\objects\aht21_task.o: .\Core\Inc\i2c.h
 .\objects\aht21_task.o: .\System\delay.h
-.\objects\aht21_task.o: .\System\sys.h
 .\objects\aht21_task.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\aht21_task.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\aht21_task.o: .\User\Tasks\include\AHT21_task.h

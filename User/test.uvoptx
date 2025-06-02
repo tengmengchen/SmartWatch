@@ -154,25 +154,25 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>6</LineNumber>
+          <LineNumber>109</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134226812</Address>
+          <Address>134239580</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\Middlewares\LVGL\GUI_APP\FUNC\src\HWDataAccess.c</Filename>
+          <Filename>.\User\Tasks\watchtask.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\test\Middlewares/LVGL/GUI_APP/FUNC/src/HWDataAccess.c\6</Expression>
+          <Expression>\\test\User/Tasks/watchtask.c\109</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
           <LineNumber>85</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134409626</Address>
+          <Address>134410862</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -188,7 +188,7 @@
           <Type>0</Type>
           <LineNumber>356</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134237510</Address>
+          <Address>134237506</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -204,7 +204,7 @@
           <Type>0</Type>
           <LineNumber>544</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134236116</Address>
+          <Address>134236112</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -220,17 +220,17 @@
         <Ww>
           <count>0</count>
           <WinNumber>1</WinNumber>
-          <ItemText>event_code</ItemText>
+          <ItemText>ret</ItemText>
         </Ww>
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>&amp;Datatime</ItemText>
+          <ItemText>rec_data</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>(RTC-&gt;DR &gt;&gt; 12) &amp; 0x1</ItemText>
+          <ItemText>temp</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
@@ -3803,6 +3803,19 @@
       <bDave2>0</bDave2>
       <PathWithFileName>.\User\Tasks\WDG_task.c</PathWithFileName>
       <FilenameWithoutPath>WDG_task.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>18</GroupNumber>
+      <FileNumber>257</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\User\Tasks\LSM303_task.c</PathWithFileName>
+      <FilenameWithoutPath>LSM303_task.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

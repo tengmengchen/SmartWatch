@@ -6,6 +6,27 @@
 
 #define OFFSET_Y 20
 
+void Lcd_BackLight_init()
+{
+   GPIO_InitTypeDef  GPIO_InitStructure = {0};
+ 
+  __HAL_RCC_GPIOB_CLK_ENABLE();
+ 
+ GPIO_InitStructure.Pin = GPIO_PIN_0;	 
+  GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP; 		 //推挽输出
+ GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_VERY_HIGH;//速度50MHz
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStructure);	  //初始化GPIOB
+  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET);
+}
+void Lcd_BackLight_On()
+{
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET);
+}
+void Lcd_BackLight_Off()
+{
+	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_RESET);
+}
+
 /******************************************************************************
       函数说明：在指定区域填充颜色
       入口数据：xsta,ysta   起始坐标

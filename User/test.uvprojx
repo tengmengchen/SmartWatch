@@ -1777,6 +1777,11 @@
               <FileType>1</FileType>
               <FilePath>.\User\Tasks\WDG_task.c</FilePath>
             </File>
+            <File>
+              <FileName>LSM303_task.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\User\Tasks\LSM303_task.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

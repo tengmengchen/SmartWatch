@@ -171,5 +171,7 @@
 .\objects\lv_port_indev.o: .\FreeRTOS\Source\include\list.h
 .\objects\lv_port_indev.o: .\Core\Inc\Usart.h
 .\objects\lv_port_indev.o: .\User\main.h
-.\objects\lv_port_indev.o: .\System\delay.h
+.\objects\lv_port_indev.o: .\BSP\Inc\LCD\lcd.h
 .\objects\lv_port_indev.o: .\System\sys.h
+.\objects\lv_port_indev.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\lv_port_indev.o: .\System\delay.h

@@ -48,8 +48,10 @@
 .\objects\main.o: .\FreeRTOS\Source\include\list.h
 .\objects\main.o: .\Core\Inc\Usart.h
 .\objects\main.o: .\User\main.h
-.\objects\main.o: .\System\delay.h
+.\objects\main.o: .\BSP\Inc\LCD\lcd.h
 .\objects\main.o: .\System\sys.h
+.\objects\main.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\main.o: .\System\delay.h
 .\objects\main.o: .\BSP\Inc\BL24C02.h
 .\objects\main.o: .\Core\Inc\i2c.h
 .\objects\main.o: .\BSP\Inc\WDG.h
@@ -65,8 +67,6 @@
 .\objects\main.o: .\User\Tasks\include\SPL06_task.h
 .\objects\main.o: .\BSP\Inc\SPL06.h
 .\objects\main.o: .\Middlewares\LVGL\GUI_APP\FUNC\inc\HWDataAccess.h
-.\objects\main.o: .\BSP\Inc\LCD\lcd.h
-.\objects\main.o: .\BSP\Inc\LCD\lcd_init.h
 .\objects\main.o: .\Core\Inc\spi.h
 .\objects\main.o: .\Core\Inc\tim.h
 .\objects\main.o: .\Middlewares\LVGL\GUI\porting\lv_port_disp.h
@@ -206,3 +206,4 @@
 .\objects\main.o: .\Middlewares\LVGL\GUI\porting\lv_port_disp.h
 .\objects\main.o: .\Middlewares\LVGL\GUI\porting\lv_port_indev.h
 .\objects\main.o: .\User\Tasks\include\WDG_task.h
+.\objects\main.o: .\User\Tasks\include\LSM303_task.h

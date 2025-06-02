@@ -9,9 +9,12 @@
 #include "FreeRTOS.h"
 #include "task.h"
 #include "Usart.h"
+#include "lcd.h"
+#include "lcd_init.h"
 
 void Error_Handler(void);
 int MC_printf(const char* s, ...);
+void SystemClock_Config(void);
 /* SPL */
 // extern float SPL_GET_Altitude(void);
 // extern int SPL_Read_Traw(void);

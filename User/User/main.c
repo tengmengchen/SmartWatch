@@ -28,7 +28,6 @@
 #define START_STK_SIZE 		256  
 #define START_TASK_PRIO		8
 
-int EI_Flag = 0;
 
 extern lv_obj_t *HomePage_Scr;
 
@@ -36,7 +35,6 @@ TaskHandle_t StartTask_Handler;
 TaskHandle_t BL24C02Task_Handler;
 TaskHandle_t EM7028Task_Handler;
 TaskHandle_t BLETask_Handler;
-TaskHandle_t LSM303Task_Handler;
 
 void SystemClock_Config(void);
 void BL24C02_test_task(void);
@@ -64,17 +62,17 @@ int main(void)
   RTC_Init();
     SPL06_Init();
   AHT21_Init();
-  // WDG_Init();
+  WDG_Init();
 		// EM7028_Init();
     MPU6050_Init();
-    // LSM303_Init();
+    LSM303_Init();
     // BLE_Init(); // 蓝牙在APP程序中没有用到
 
     KEY_Init();
-
+    Low_Power_Init();
 
     MX_SPI1_Init();
-    lcd_init();
+    Lcd_BackLight_init();
     lv_init();
     lv_port_disp_init();
     lv_port_indev_init();
@@ -121,19 +119,6 @@ int main(void)
 
 								
 }	
-
-void lcd_init()
-{
-   GPIO_InitTypeDef  GPIO_InitStructure = {0};
- 
-  __HAL_RCC_GPIOB_CLK_ENABLE();
- 
- GPIO_InitStructure.Pin = GPIO_PIN_0;	 
-  GPIO_InitStructure.Mode = GPIO_MODE_OUTPUT_PP; 		 //推挽输出
- GPIO_InitStructure.Speed = GPIO_SPEED_FREQ_VERY_HIGH;//速度50MHz
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStructure);	  //初始化GPIOB
-  HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, GPIO_PIN_SET);
-}
 
 /**
   * @brief System Clock Configuration
@@ -195,50 +180,6 @@ void Error_Handler(void)
   }
   /* USER CODE END Error_Handler_Debug */
 }
-
-/**
-  * @brief  This function is a LSM303 test task.
-  * @retval None
-  */
- void LSM303_test_task(void)
- {
-  uint8_t ret, rec_data;
-  double X_Accel, Y_Accel, Z_Accel;
-  double roll, pitch;
-   while(1)
-   {
-    ret = LSM303_Read_CTRL_REG1_A(&rec_data);
-    if(ret == 0)
-    {
-      MC_printf(" LSM303 Get Reg Data: %hhu\r\n", rec_data);
-    }
-    ret = LSM303_Read_Accel(&X_Accel, &Y_Accel, &Z_Accel);
-    if(ret == 0)
-    {
-      MC_printf(" LSM303 Get Accel Data: %lf %lf %lf\r\n", X_Accel, Y_Accel, Z_Accel);
-    }
-    else
-    {
-      MC_printf(" LSM303 Get Accel Data Failed!\r\n");
-    }
-
-    ret = LSM303_Get_Pose(&roll, &pitch);
-    if(ret == 0)
-    {
-      MC_printf(" LSM303 Get Pose: %lf %lf\r\n", roll, pitch);
-    }
-    else
-    {
-      MC_printf(" LSM303 Get Pose Failed!\r\n");
-    }
-    if(EI_Flag)
-    {
-      EI_Flag = 0;
-      MC_printf(" Get GPIO Flag!\r\n");
-    }
-      vTaskDelay(10000);  
-   }
- }
 
 /**
   * @brief  This function is a BLE test task.

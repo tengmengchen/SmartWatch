@@ -53,6 +53,10 @@
 #define LCD_BLK_Clr()  HAL_GPIO_WritePin(BLK_PORT,BLK_PIN,GPIO_PIN_RESET)//BLK
 #define LCD_BLK_Set()  HAL_GPIO_WritePin(BLK_PORT,BLK_PIN,GPIO_PIN_SET)
 
+void Lcd_BackLight_init();
+void Lcd_BackLight_On();
+void Lcd_BackLight_Off();
+
 void LCD_GPIO_Init(void);//初始化GPIO
 void LCD_Writ_Bus(u8 dat);//模拟SPI时序
 void LCD_WR_DATA8(u8 dat);//写入一个字节

@@ -1,6 +1,6 @@
 Dependencies for Project 'test', Target 'Target 1': (DO NOT MODIFY !)
-F (.\User\main.c)(0x683919B0)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (User\main.h)(0x68391C7C)
+F (.\User\main.c)(0x683D7481)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -48,9 +48,11 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\User\main.h)(0x68391C7C)
-I (.\System\delay.h)(0x67B190BD)
+I (.\User\main.h)(0x683D74A6)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 I (.\BSP\Inc\BL24C02.h)(0x67B2AF74)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
 I (.\BSP\Inc\WDG.h)(0x67B2E087)
@@ -63,8 +65,6 @@ I (.\FreeRTOS\Source\include\queue.h)(0x678659E9)
 I (.\Middlewares\LVGL\GUI_APP\FUNC\inc\HWDataAccess.h)(0x683813DC)
 I (.\BSP\Inc\SPL06.h)(0x6837C9D5)
 I (.\User\Tasks\include\SPL06_task.h)(0x6837CA58)
-I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
-I (.\BSP\Inc\LCD\lcd_init.h)(0x67C124AA)
 I (.\Core\Inc\spi.h)(0x678659E9)
 I (.\Core\Inc\tim.h)(0x678659E9)
 I (.\Middlewares\LVGL\GUI\porting\lv_port_disp.h)(0x678659E9)
@@ -198,9 +198,10 @@ I (.\BSP\Inc\BLE.h)(0x67E5464D)
 I (.\BSP\Inc\MPU6050.h)(0x683929FE)
 I (.\BSP\Inc\KEY.h)(0x67ED1A7B)
 I (.\Core\Inc\RTC.h)(0x67EE3A40)
-I (.\User\Tasks\include\watchtask.h)(0x68391C98)
+I (.\User\Tasks\include\watchtask.h)(0x683961B0)
 I (.\User\Tasks\include\LVGL_task.h)(0x6836CC80)
 I (.\User\Tasks\include\WDG_task.h)(0x6836C816)
+I (.\User\Tasks\include\LSM303_task.h)(0x6839618C)
 F (.\Core\Inc\FreeRTOSConfig.h)(0x68384D6D)()
 F (.\FreeRTOS\Source\croutine.c)(0x678659E9)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\croutine.o --omf_browse .\objects\croutine.crf --depend .\objects\croutine.d)
 I (.\FreeRTOS\Source\include\FreeRTOS.h)(0x67C7E026)
@@ -328,8 +329,8 @@ I (.\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
-F (.\Core\Src\stm32f4xx_it.c)(0x68370E30)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
-I (.\User\main.h)(0x68391C7C)
+F (.\Core\Src\stm32f4xx_it.c)(0x683D71D5)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\stm32f4xx_it.o --omf_browse .\objects\stm32f4xx_it.crf --depend .\objects\stm32f4xx_it.d)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -377,6 +378,9 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 I (.\Core\Inc\stm32f4xx_it.h)(0x67AEF784)
 I (.\Middlewares\LVGL\GUI\lvgl\lvgl.h)(0x678659E9)
 I (.\Middlewares\LVGL\GUI\lvgl\src/misc/lv_log.h)(0x678659E9)
@@ -500,7 +504,7 @@ I (.\Middlewares\LVGL\GUI\lvgl\src/extra/libs/ffmpeg/lv_ffmpeg.h)(0x678659E9)
 I (.\Middlewares\LVGL\GUI_APP\FUNC\inc\PageChange.h)(0x67ED3606)
 F (.\Core\Src\Usart.c)(0x67B94360)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\usart.o --omf_browse .\objects\usart.crf --depend .\objects\usart.d)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -547,9 +551,12 @@ I (.\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 F (.\Core\Src\i2c.c)(0x6836D609)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\i2c.o --omf_browse .\objects\i2c.crf --depend .\objects\i2c.d)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -597,11 +604,13 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 F (.\Core\Src\spi.c)(0x67C80FD3)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\spi.o --omf_browse .\objects\spi.crf --depend .\objects\spi.d)
 I (.\Core\Inc\spi.h)(0x678659E9)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -649,9 +658,12 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 F (.\Core\Src\tim.c)(0x67BFD9AC)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\tim.o --omf_browse .\objects\tim.crf --depend .\objects\tim.d)
 I (.\Core\Inc\tim.h)(0x678659E9)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -699,9 +711,12 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 F (.\Core\Src\dma.c)(0x678659E9)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\dma.o --omf_browse .\objects\dma.crf --depend .\objects\dma.d)
 I (.\Core\Inc\dma.h)(0x678659E9)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -749,9 +764,12 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 F (.\Core\Src\RTC.c)(0x6838553D)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\rtc.o --omf_browse .\objects\rtc.crf --depend .\objects\rtc.d)
 I (.\Core\Inc\RTC.h)(0x67EE3A40)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -799,7 +817,63 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-F (.\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c)(0x67EDF464)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\stm32f4xx_hal.o --omf_browse .\objects\stm32f4xx_hal.crf --depend .\objects\stm32f4xx_hal.d)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+F (.\Core\Src\pwr.c)(0x683D74C7)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\pwr.o --omf_browse .\objects\pwr.crf --depend .\objects\pwr.d)
+I (.\Core\Inc\pwr.h)(0x683D68D0)
+I (.\User\main.h)(0x683D74A6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x678659E9)
+I (.\Core\Inc\stm32f4xx_hal_conf.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x678659E9)
+I (.\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x678659E9)
+I (.\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x678659E9)
+I (D:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm4.h)(0x55093C04)
+I (D:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (D:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (D:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmSimd.h)(0x55093C04)
+I (.\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x678659E9)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C245B8)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x678659E9)
+I (.\FreeRTOS\Source\include\FreeRTOS.h)(0x67C7E026)
+I (.\Core\Inc\FreeRTOSConfig.h)(0x68384D6D)
+I (.\FreeRTOS\Source\include\projdefs.h)(0x678659E9)
+I (.\FreeRTOS\Source\include\portable.h)(0x678659E9)
+I (.\FreeRTOS\Source\include\deprecated_definitions.h)(0x678659E9)
+I (.\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h)(0x678659E9)
+I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
+I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
+I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
+I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+F (.\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c)(0x683D63B9)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\stm32f4xx_hal.o --omf_browse .\objects\stm32f4xx_hal.crf --depend .\objects\stm32f4xx_hal.d)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x678659E9)
 I (.\Core\Inc\stm32f4xx_hal_conf.h)(0x678659E9)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x678659E9)
@@ -1595,7 +1669,7 @@ I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x678659E9)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x678659E9)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x678659E9)
 F (.\System\printf.c)(0x67ECB40C)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\printf.o --omf_browse .\objects\printf.crf --depend .\objects\printf.d)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -1643,10 +1717,13 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 F (.\BSP\Src\BL24C02.c)(0x67B2C21B)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\bl24c02.o --omf_browse .\objects\bl24c02.crf --depend .\objects\bl24c02.d)
 I (.\BSP\Inc\BL24C02.h)(0x67B2AF74)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -1694,11 +1771,13 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 F (.\BSP\Src\WDG.c)(0x67B2E090)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\wdg.o --omf_browse .\objects\wdg.crf --depend .\objects\wdg.d)
 I (.\BSP\Inc\WDG.h)(0x67B2E087)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -1746,12 +1825,14 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 F (.\BSP\Src\AHT21.c)(0x6836B9A0)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\aht21.o --omf_browse .\objects\aht21.crf --depend .\objects\aht21.d)
 I (.\BSP\Inc\AHT21.h)(0x6836B99B)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -1799,8 +1880,10 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
 I (.\User\Tasks\include\AHT21_task.h)(0x6836BBC4)
@@ -1812,7 +1895,7 @@ I (.\User\Tasks\include\SPL06_task.h)(0x6837CA58)
 F (.\BSP\Src\Sensor.c)(0x67CA9C17)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\sensor.o --omf_browse .\objects\sensor.crf --depend .\objects\sensor.d)
 I (.\BSP\Inc\Sensor.h)(0x67CA9326)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -1860,14 +1943,16 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
 F (.\BSP\Src\SPL06.c)(0x6837D13E)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\spl06.o --omf_browse .\objects\spl06.crf --depend .\objects\spl06.d)
 I (.\BSP\Inc\SPL06.h)(0x6837C9D5)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -1915,8 +2000,10 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
 I (.\User\Tasks\include\SPL06_task.h)(0x6837CA58)
@@ -1925,7 +2012,7 @@ I (.\FreeRTOS\Source\include\queue.h)(0x678659E9)
 I (.\Middlewares\LVGL\GUI_APP\FUNC\inc\HWDataAccess.h)(0x683813DC)
 I (.\BSP\Inc\AHT21.h)(0x6836B99B)
 I (.\User\Tasks\include\AHT21_task.h)(0x6836BBC4)
-F (.\BSP\Src\LCD\lcd.c)(0x67C2AB87)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
+F (.\BSP\Src\LCD\lcd.c)(0x683D747A)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\lcd.o --omf_browse .\objects\lcd.crf --depend .\objects\lcd.d)
 I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
 I (.\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x678659E9)
@@ -1963,11 +2050,11 @@ I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x678659E9)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x678659E9)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x678659E9)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x678659E9)
-I (.\BSP\Inc\LCD\lcd_init.h)(0x67C124AA)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 I (.\BSP\Inc\LCD\lcdfont.h)(0x678659E9)
 I (.\System\delay.h)(0x67B190BD)
 I (.\Core\Inc\spi.h)(0x678659E9)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
 I (.\FreeRTOS\Source\include\FreeRTOS.h)(0x67C7E026)
@@ -1981,7 +2068,7 @@ I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
 F (.\BSP\Src\LCD\lcd_init.c)(0x678659E9)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\lcd_init.o --omf_browse .\objects\lcd_init.crf --depend .\objects\lcd_init.d)
-I (.\BSP\Inc\LCD\lcd_init.h)(0x67C124AA)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 I (.\System\sys.h)(0x67B18FCE)
 I (.\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x678659E9)
 I (.\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x678659E9)
@@ -2020,7 +2107,7 @@ I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x678659E9)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x678659E9)
 I (.\System\delay.h)(0x67B190BD)
 I (.\Core\Inc\spi.h)(0x678659E9)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
 I (.\FreeRTOS\Source\include\FreeRTOS.h)(0x67C7E026)
@@ -2033,12 +2120,13 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\Core\Inc\tim.h)(0x678659E9)
 F (.\BSP\Src\CST816.c)(0x6837BB1E)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\cst816.o --omf_browse .\objects\cst816.crf --depend .\objects\cst816.d)
 I (.\BSP\Inc\CST816.h)(0x67C14FCE)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x678659E9)
@@ -2085,12 +2173,14 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 F (.\BSP\Src\EM7028.c)(0x67CCFE8E)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\em7028.o --omf_browse .\objects\em7028.crf --depend .\objects\em7028.d)
 I (.\BSP\Inc\EM7028.h)(0x67C9510A)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -2138,13 +2228,15 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
-F (.\BSP\Src\MPU6050.c)(0x6839471F)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\mpu6050.o --omf_browse .\objects\mpu6050.crf --depend .\objects\mpu6050.d)
+F (.\BSP\Src\MPU6050.c)(0x68395E49)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\mpu6050.o --omf_browse .\objects\mpu6050.crf --depend .\objects\mpu6050.d)
 I (.\BSP\Inc\MPU6050.h)(0x683929FE)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -2192,13 +2284,15 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
 F (.\BSP\Src\BLE.c)(0x67E6420E)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\ble.o --omf_browse .\objects\ble.crf --depend .\objects\ble.d)
 I (.\BSP\Inc\BLE.h)(0x67E5464D)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x678659E9)
@@ -2245,10 +2339,13 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 F (.\BSP\Src\LSM303.c)(0x67ECD7E1)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\lsm303.o --omf_browse .\objects\lsm303.crf --depend .\objects\lsm303.d)
 I (.\BSP\Inc\LSM303.h)(0x67ECD7E8)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -2296,13 +2393,15 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
 F (.\BSP\Src\KEY.c)(0x6836C50D)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\key.o --omf_browse .\objects\key.crf --depend .\objects\key.d)
 I (.\BSP\Inc\KEY.h)(0x67ED1A7B)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -2350,6 +2449,9 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 F (.\Middlewares\LVGL\GUI\porting\lv_port_disp.c)(0x68121DA3)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\lv_port_disp.o --omf_browse .\objects\lv_port_disp.crf --depend .\objects\lv_port_disp.d)
 I (Middlewares\LVGL\GUI\porting\lv_port_disp.h)(0x678659E9)
 I (.\Middlewares\LVGL\GUI\lvgl/lvgl.h)(0x678659E9)
@@ -2509,7 +2611,7 @@ I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x678659E9)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x678659E9)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x678659E9)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x678659E9)
-I (.\BSP\Inc\LCD\lcd_init.h)(0x67C124AA)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 F (.\Middlewares\LVGL\GUI\porting\lv_port_indev.c)(0x67C155BD)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\lv_port_indev.o --omf_browse .\objects\lv_port_indev.crf --depend .\objects\lv_port_indev.d)
 I (Middlewares\LVGL\GUI\porting\lv_port_indev.h)(0x678659E9)
 I (.\Middlewares\LVGL\GUI\lvgl/lvgl.h)(0x678659E9)
@@ -2636,7 +2738,7 @@ I (.\Middlewares\LVGL\GUI\lvgl/src/extra/libs/rlottie/lv_rlottie.h)(0x678659E9)
 I (.\Middlewares\LVGL\GUI\lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.h)(0x678659E9)
 I (.\BSP\Inc\CST816.h)(0x67C14FCE)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x678659E9)
 I (.\Core\Inc\stm32f4xx_hal_conf.h)(0x678659E9)
@@ -2681,8 +2783,10 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 F (.\Middlewares\LVGL\GUI\lvgl\src\core\lv_disp.c)(0x678659E9)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\lv_disp.o --omf_browse .\objects\lv_disp.crf --depend .\objects\lv_disp.d)
 I (Middlewares\LVGL\GUI\lvgl\src\core\lv_disp.h)(0x678659E9)
 I (Middlewares\LVGL\GUI\lvgl\src\core\../hal/lv_hal.h)(0x678659E9)
@@ -15092,7 +15196,7 @@ I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (Middlewares\LVGL\GUI_APP\GUI_APP\src\../../FUNC/inc/HWDataAccess.h)(0x683813DC)
 I (.\BSP\Inc\AHT21.h)(0x6836B99B)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x678659E9)
 I (.\Core\Inc\stm32f4xx_hal_conf.h)(0x678659E9)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x678659E9)
@@ -15136,8 +15240,10 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
 I (.\User\Tasks\include\AHT21_task.h)(0x6836BBC4)
 I (.\FreeRTOS\Source\include\semphr.h)(0x678659E9)
@@ -15276,7 +15382,7 @@ I (Middlewares\LVGL\GUI_APP\GUI_APP\src\../inc/../../FUNC/inc/Computer.h)(0x67C7
 I (Middlewares\LVGL\GUI_APP\GUI_APP\src\../inc/../../FUNC/inc/../../GUI_APP/inc/ComputerPage.h)(0x67C933DA)
 I (Middlewares\LVGL\GUI_APP\GUI_APP\src\../inc/CalendarPage.h)(0x67C93B77)
 I (.\User\Tasks\include\AHT21_task.h)(0x6836BBC4)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x678659E9)
 I (.\Core\Inc\stm32f4xx_hal_conf.h)(0x678659E9)
@@ -15321,10 +15427,12 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 I (.\BSP\Inc\AHT21.h)(0x6836B99B)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
 I (.\System\delay.h)(0x67B190BD)
-I (.\System\sys.h)(0x67B18FCE)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
 I (.\FreeRTOS\Source\include\semphr.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\queue.h)(0x678659E9)
@@ -17571,7 +17679,7 @@ I (Middlewares\LVGL\GUI_APP\GUI_APP\src\../inc/../../ICON/icon.h)(0x6837C45C)
 I (Middlewares\LVGL\GUI_APP\GUI_APP\src\../../FUNC/inc/HWDataAccess.h)(0x683813DC)
 I (.\BSP\Inc\AHT21.h)(0x6836B99B)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x678659E9)
 I (.\Core\Inc\stm32f4xx_hal_conf.h)(0x678659E9)
@@ -17616,8 +17724,10 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
 I (.\User\Tasks\include\AHT21_task.h)(0x6836BBC4)
 I (.\FreeRTOS\Source\include\semphr.h)(0x678659E9)
@@ -17630,7 +17740,7 @@ I (Middlewares\LVGL\GUI_APP\FUNC\src\../inc/HWDataAccess.h)(0x683813DC)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (.\BSP\Inc\AHT21.h)(0x6836B99B)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x678659E9)
@@ -17677,8 +17787,10 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
 I (.\User\Tasks\include\AHT21_task.h)(0x6836BBC4)
@@ -17689,7 +17801,7 @@ I (.\BSP\Inc\SPL06.h)(0x6837C9D5)
 I (.\User\Tasks\include\SPL06_task.h)(0x6837CA58)
 F (.\User\Tasks\AHT21_task.c)(0x6836C6EB)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\aht21_task.o --omf_browse .\objects\aht21_task.crf --depend .\objects\aht21_task.d)
 I (.\User\Tasks\include\AHT21_task.h)(0x6836BBC4)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -17737,10 +17849,12 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 I (.\BSP\Inc\AHT21.h)(0x6836B99B)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
 I (.\System\delay.h)(0x67B190BD)
-I (.\System\sys.h)(0x67B18FCE)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
 I (.\FreeRTOS\Source\include\semphr.h)(0x678659E9)
@@ -17748,7 +17862,7 @@ I (.\FreeRTOS\Source\include\queue.h)(0x678659E9)
 I (.\Middlewares\LVGL\GUI_APP\FUNC\inc\HWDataAccess.h)(0x683813DC)
 I (.\BSP\Inc\SPL06.h)(0x6837C9D5)
 I (.\User\Tasks\include\SPL06_task.h)(0x6837CA58)
-F (.\User\Tasks\LVGL_task.c)(0x68370E28)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\lvgl_task.o --omf_browse .\objects\lvgl_task.crf --depend .\objects\lvgl_task.d)
+F (.\User\Tasks\LVGL_task.c)(0x683D6541)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\lvgl_task.o --omf_browse .\objects\lvgl_task.crf --depend .\objects\lvgl_task.d)
 I (.\User\Tasks\include\LVGL_task.h)(0x6836CC80)
 I (.\Middlewares\LVGL\GUI\porting\lv_port_disp.h)(0x678659E9)
 I (.\Middlewares\LVGL\GUI\lvgl/lvgl.h)(0x678659E9)
@@ -17876,7 +17990,7 @@ I (.\Middlewares\LVGL\GUI\lvgl/src/extra/libs/ffmpeg/lv_ffmpeg.h)(0x678659E9)
 I (.\Middlewares\LVGL\GUI\porting\lv_port_indev.h)(0x678659E9)
 I (.\Middlewares\LVGL\GUI_APP\demos\widgets\lv_demo_widgets.h)(0x678659EA)
 I (.\Middlewares\LVGL\GUI_APP\demos\widgets\../lv_demos.h)(0x678659E9)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x678659E9)
 I (.\Core\Inc\stm32f4xx_hal_conf.h)(0x678659E9)
@@ -17921,11 +18035,14 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 F (.\User\Tasks\SPL06_task.c)(0x6837D40C)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\spl06_task.o --omf_browse .\objects\spl06_task.crf --depend .\objects\spl06_task.d)
 I (.\User\Tasks\include\SPL06_task.h)(0x6837CA58)
 I (.\BSP\Inc\SPL06.h)(0x6837C9D5)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -17973,8 +18090,10 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
 I (.\FreeRTOS\Source\include\semphr.h)(0x678659E9)
@@ -17982,9 +18101,9 @@ I (.\FreeRTOS\Source\include\queue.h)(0x678659E9)
 I (.\Middlewares\LVGL\GUI_APP\FUNC\inc\HWDataAccess.h)(0x683813DC)
 I (.\BSP\Inc\AHT21.h)(0x6836B99B)
 I (.\User\Tasks\include\AHT21_task.h)(0x6836BBC4)
-F (.\User\Tasks\watchtask.c)(0x683943CA)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\watchtask.o --omf_browse .\objects\watchtask.crf --depend .\objects\watchtask.d)
-I (.\User\Tasks\include\watchtask.h)(0x68391C98)
-I (.\User\main.h)(0x68391C7C)
+F (.\User\Tasks\watchtask.c)(0x683D72F3)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\watchtask.o --omf_browse .\objects\watchtask.crf --depend .\objects\watchtask.d)
+I (.\User\Tasks\include\watchtask.h)(0x683961B0)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -18032,11 +18151,13 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
 I (.\User\Tasks\include\AHT21_task.h)(0x6836BBC4)
 I (.\BSP\Inc\AHT21.h)(0x6836B99B)
 I (.\Core\Inc\i2c.h)(0x67C1548A)
 I (.\System\delay.h)(0x67B190BD)
-I (.\System\sys.h)(0x67B18FCE)
 I (D:\Keil_v5\ARM\ARMCC\include\string.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\math.h)(0x54C245B8)
 I (.\FreeRTOS\Source\include\semphr.h)(0x678659E9)
@@ -18169,11 +18290,12 @@ I (.\Middlewares\LVGL\GUI_APP\demos\widgets\lv_demo_widgets.h)(0x678659EA)
 I (.\Middlewares\LVGL\GUI_APP\demos\widgets\../lv_demos.h)(0x678659E9)
 I (.\User\Tasks\include\WDG_task.h)(0x6836C816)
 I (.\BSP\Inc\WDG.h)(0x67B2E087)
-I (.\BSP\Inc\MPU6050.h)(0x683929FE)
+I (.\User\Tasks\include\LSM303_task.h)(0x6839618C)
+I (.\BSP\Inc\LSM303.h)(0x67ECD7E8)
 F (.\User\Tasks\WDG_task.c)(0x6836C85A)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\wdg_task.o --omf_browse .\objects\wdg_task.crf --depend .\objects\wdg_task.d)
 I (.\User\Tasks\include\WDG_task.h)(0x6836C816)
 I (.\BSP\Inc\WDG.h)(0x67B2E087)
-I (.\User\main.h)(0x68391C7C)
+I (.\User\main.h)(0x683D74A6)
 I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
 I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
@@ -18221,8 +18343,66 @@ I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
 I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
 I (.\Core\Inc\Usart.h)(0x67AF036B)
-I (.\System\delay.h)(0x67B190BD)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
 I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\System\delay.h)(0x67B190BD)
+F (.\User\Tasks\LSM303_task.c)(0x68396242)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\lsm303_task.o --omf_browse .\objects\lsm303_task.crf --depend .\objects\lsm303_task.d)
+I (.\User\Tasks\include\LSM303_task.h)(0x6839618C)
+I (.\User\main.h)(0x683D74A6)
+I (D:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x54C245B8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x54C245B8)
+I (D:\Keil_v5\ARM\ARMCC\include\stdarg.h)(0x54C245B8)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal.h)(0x678659E9)
+I (.\Core\Inc\stm32f4xx_hal_conf.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_def.h)(0x678659E9)
+I (.\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x678659E9)
+I (.\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f411xe.h)(0x678659E9)
+I (D:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include\core_cm4.h)(0x55093C04)
+I (D:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmInstr.h)(0x55093C04)
+I (D:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmFunc.h)(0x55093C04)
+I (D:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include\core_cmSimd.h)(0x55093C04)
+I (.\Drivers\CMSIS\Device\ST\STM32F4xx\Include\system_stm32f4xx.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\Legacy/stm32_hal_legacy.h)(0x678659E9)
+I (D:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x54C245B8)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rcc_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_gpio_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_exti.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_dma_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_cortex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_ll_adc.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_adc_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_flash_ramfunc.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_pwr_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_rtc_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_spi.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_tim_ex.h)(0x678659E9)
+I (.\Drivers\STM32F4xx_HAL_Driver\Inc\stm32f4xx_hal_uart.h)(0x678659E9)
+I (.\FreeRTOS\Source\include\FreeRTOS.h)(0x67C7E026)
+I (.\Core\Inc\FreeRTOSConfig.h)(0x68384D6D)
+I (.\FreeRTOS\Source\include\projdefs.h)(0x678659E9)
+I (.\FreeRTOS\Source\include\portable.h)(0x678659E9)
+I (.\FreeRTOS\Source\include\deprecated_definitions.h)(0x678659E9)
+I (.\FreeRTOS\Source\portable\RVDS\ARM_CM4F\portmacro.h)(0x678659E9)
+I (.\FreeRTOS\Source\include\mpu_wrappers.h)(0x678659E9)
+I (.\FreeRTOS\Source\include\task.h)(0x678659E9)
+I (.\FreeRTOS\Source\include\list.h)(0x678659E9)
+I (.\Core\Inc\Usart.h)(0x67AF036B)
+I (.\BSP\Inc\LCD\lcd.h)(0x67C2A9BF)
+I (.\System\sys.h)(0x67B18FCE)
+I (.\BSP\Inc\LCD\lcd_init.h)(0x683D7466)
+I (.\BSP\Inc\LSM303.h)(0x67ECD7E8)
+I (.\Core\Inc\i2c.h)(0x67C1548A)
+I (.\System\delay.h)(0x67B190BD)
 F (RTE\Device\STM32F411CEUx\startup_stm32f411xe.s)(0x68384D71)(--cpu Cortex-M4.fp -g --apcs=interwork -I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include--pd "__UVISION_VERSION SETA 515" --pd "_RTE_ SETA 1" --pd "STM32F411xE SETA 1"--list .\listings\startup_stm32f411xe.lst --xref -o .\objects\startup_stm32f411xe.o --depend .\objects\startup_stm32f411xe.d)
 F (RTE\Device\STM32F411CEUx\system_stm32f4xx.c)(0x67EDF461)(--c99 -c --cpu Cortex-M4.fp -g -O0 --apcs=interwork --split_sections -ID:\Keil_v5\ARM\Pack\ARM\CMSIS\4.3.0\CMSIS\Include -I.\FreeRTOS\Source\include -I.\FreeRTOS\Source\portable\RVDS\ARM_CM4F -I.\Core\Inc -I.\User -I.\Drivers\STM32F4xx_HAL_Driver\Inc -I.\Drivers\CMSIS\Device\ST\STM32F4xx\Include -I.\System -I.\BSP\Inc -I.\Middlewares\LVGL\GUI -I.\Middlewares\LVGL\GUI\lvgl -I.\Middlewares\LVGL\GUI\lvgl\src -I.\Middlewares\LVGL\GUI\lvgl\examples\porting -I.\BSP\Inc\LCD -I.\Middlewares\LVGL\GUI_APP\demos -I.\Middlewares\LVGL\GUI_APP\demos\stress -I.\Middlewares\LVGL\GUI_APP\demos\widgets -I.\Middlewares\LVGL\GUI\porting -I.\Middlewares\LVGL\GUI_APP\FUNC\inc -I.\Middlewares\LVGL\GUI_APP\GUI_APP\inc -I.\Middlewares\LVGL\GUI_APP\ICON -I.\Middlewares\LVGL\GUI_APP -I.\User\Tasks\include --no-multibyte-chars-I D:\BaiduNetdiskDownload\ov-watch\tmc\User\RTE-I D:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.17.1\Drivers\CMSIS\Device\ST\STM32F4xx\Include-I D:\Keil_v5\ARM\CMSIS\Include-D__UVISION_VERSION="515" -D_RTE_ -DSTM32F411xE-o .\objects\system_stm32f4xx.o --omf_browse .\objects\system_stm32f4xx.crf --depend .\objects\system_stm32f4xx.d)
 I (.\Drivers\CMSIS\Device\ST\STM32F4xx\Include\stm32f4xx.h)(0x678659E9)

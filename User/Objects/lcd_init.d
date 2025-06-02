@@ -52,4 +52,5 @@
 .\objects\lcd_init.o: .\FreeRTOS\Source\include\list.h
 .\objects\lcd_init.o: .\Core\Inc\Usart.h
 .\objects\lcd_init.o: .\User\main.h
+.\objects\lcd_init.o: .\BSP\Inc\LCD\lcd.h
 .\objects\lcd_init.o: .\Core\Inc\tim.h

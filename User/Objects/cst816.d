@@ -50,5 +50,7 @@
 .\objects\cst816.o: .\FreeRTOS\Source\include\list.h
 .\objects\cst816.o: .\Core\Inc\Usart.h
 .\objects\cst816.o: .\User\main.h
-.\objects\cst816.o: .\System\delay.h
+.\objects\cst816.o: .\BSP\Inc\LCD\lcd.h
 .\objects\cst816.o: .\System\sys.h
+.\objects\cst816.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\cst816.o: .\System\delay.h

@@ -175,8 +175,10 @@
 .\objects\homepage.o: .\FreeRTOS\Source\include\list.h
 .\objects\homepage.o: .\Core\Inc\Usart.h
 .\objects\homepage.o: .\User\main.h
-.\objects\homepage.o: .\System\delay.h
+.\objects\homepage.o: .\BSP\Inc\LCD\lcd.h
 .\objects\homepage.o: .\System\sys.h
+.\objects\homepage.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\homepage.o: .\System\delay.h
 .\objects\homepage.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\homepage.o: .\User\Tasks\include\AHT21_task.h
 .\objects\homepage.o: .\BSP\Inc\AHT21.h

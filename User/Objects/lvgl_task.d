@@ -173,3 +173,6 @@
 .\objects\lvgl_task.o: .\FreeRTOS\Source\include\list.h
 .\objects\lvgl_task.o: .\Core\Inc\Usart.h
 .\objects\lvgl_task.o: .\User\main.h
+.\objects\lvgl_task.o: .\BSP\Inc\LCD\lcd.h
+.\objects\lvgl_task.o: .\System\sys.h
+.\objects\lvgl_task.o: .\BSP\Inc\LCD\lcd_init.h

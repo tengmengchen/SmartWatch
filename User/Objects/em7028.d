@@ -50,6 +50,8 @@
 .\objects\em7028.o: .\FreeRTOS\Source\include\list.h
 .\objects\em7028.o: .\Core\Inc\Usart.h
 .\objects\em7028.o: .\User\main.h
-.\objects\em7028.o: .\System\delay.h
+.\objects\em7028.o: .\BSP\Inc\LCD\lcd.h
 .\objects\em7028.o: .\System\sys.h
+.\objects\em7028.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\em7028.o: .\System\delay.h
 .\objects\em7028.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

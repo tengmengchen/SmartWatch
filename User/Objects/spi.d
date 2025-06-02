@@ -49,3 +49,6 @@
 .\objects\spi.o: .\FreeRTOS\Source\include\list.h
 .\objects\spi.o: .\Core\Inc\Usart.h
 .\objects\spi.o: .\User\main.h
+.\objects\spi.o: .\BSP\Inc\LCD\lcd.h
+.\objects\spi.o: .\System\sys.h
+.\objects\spi.o: .\BSP\Inc\LCD\lcd_init.h

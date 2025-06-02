@@ -50,7 +50,9 @@
 .\objects\lsm303.o: .\FreeRTOS\Source\include\list.h
 .\objects\lsm303.o: .\Core\Inc\Usart.h
 .\objects\lsm303.o: .\User\main.h
-.\objects\lsm303.o: .\System\delay.h
+.\objects\lsm303.o: .\BSP\Inc\LCD\lcd.h
 .\objects\lsm303.o: .\System\sys.h
+.\objects\lsm303.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\lsm303.o: .\System\delay.h
 .\objects\lsm303.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\lsm303.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

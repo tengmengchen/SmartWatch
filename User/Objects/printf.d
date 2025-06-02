@@ -48,3 +48,6 @@
 .\objects\printf.o: .\FreeRTOS\Source\include\list.h
 .\objects\printf.o: .\Core\Inc\Usart.h
 .\objects\printf.o: .\User\main.h
+.\objects\printf.o: .\BSP\Inc\LCD\lcd.h
+.\objects\printf.o: .\System\sys.h
+.\objects\printf.o: .\BSP\Inc\LCD\lcd_init.h

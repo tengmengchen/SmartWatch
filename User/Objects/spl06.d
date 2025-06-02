@@ -50,8 +50,10 @@
 .\objects\spl06.o: .\FreeRTOS\Source\include\list.h
 .\objects\spl06.o: .\Core\Inc\Usart.h
 .\objects\spl06.o: .\User\main.h
-.\objects\spl06.o: .\System\delay.h
+.\objects\spl06.o: .\BSP\Inc\LCD\lcd.h
 .\objects\spl06.o: .\System\sys.h
+.\objects\spl06.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\spl06.o: .\System\delay.h
 .\objects\spl06.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\spl06.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\spl06.o: .\User\Tasks\include\SPL06_task.h

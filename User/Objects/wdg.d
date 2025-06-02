@@ -49,5 +49,7 @@
 .\objects\wdg.o: .\FreeRTOS\Source\include\list.h
 .\objects\wdg.o: .\Core\Inc\Usart.h
 .\objects\wdg.o: .\User\main.h
-.\objects\wdg.o: .\System\delay.h
+.\objects\wdg.o: .\BSP\Inc\LCD\lcd.h
 .\objects\wdg.o: .\System\sys.h
+.\objects\wdg.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\wdg.o: .\System\delay.h

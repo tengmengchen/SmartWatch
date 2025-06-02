@@ -216,7 +216,6 @@ uint8_t MPU6050_Init()
 
     ret = MPU6050_Write_Reg(PWR_MGMT_1, 0X80);
     delay_ms(500);
-    MPU6050_Write_Reg(MPU_GYRO_CFG_REG, 0X08);
     ret = MPU6050_Wake();
     if(ret) return ret;
 
@@ -329,7 +328,7 @@ uint8_t MPU6050_Get_SleepState(uint8_t *rec_data)
 uint8_t MPU6050_Wake()
 {
     uint8_t ret;
-    ret = MPU6050_Write_Reg(PWR_MGMT_1, 0x20);
+    ret = MPU6050_Write_Reg(PWR_MGMT_1, 0x21);
     return ret;
 }
 

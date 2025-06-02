@@ -50,7 +50,9 @@
 .\objects\sensor.o: .\FreeRTOS\Source\include\list.h
 .\objects\sensor.o: .\Core\Inc\Usart.h
 .\objects\sensor.o: .\User\main.h
-.\objects\sensor.o: .\System\delay.h
+.\objects\sensor.o: .\BSP\Inc\LCD\lcd.h
 .\objects\sensor.o: .\System\sys.h
+.\objects\sensor.o: .\BSP\Inc\LCD\lcd_init.h
+.\objects\sensor.o: .\System\delay.h
 .\objects\sensor.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\sensor.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

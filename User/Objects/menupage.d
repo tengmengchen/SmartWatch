@@ -176,10 +176,12 @@
 .\objects\menupage.o: .\FreeRTOS\Source\include\list.h
 .\objects\menupage.o: .\Core\Inc\Usart.h
 .\objects\menupage.o: .\User\main.h
+.\objects\menupage.o: .\BSP\Inc\LCD\lcd.h
+.\objects\menupage.o: .\System\sys.h
+.\objects\menupage.o: .\BSP\Inc\LCD\lcd_init.h
 .\objects\menupage.o: .\BSP\Inc\AHT21.h
 .\objects\menupage.o: .\Core\Inc\i2c.h
 .\objects\menupage.o: .\System\delay.h
-.\objects\menupage.o: .\System\sys.h
 .\objects\menupage.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 .\objects\menupage.o: .\User\Tasks\include\AHT21_task.h
 .\objects\menupage.o: .\FreeRTOS\Source\include\semphr.h
