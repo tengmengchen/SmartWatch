@@ -517,6 +517,11 @@
               <FileType>1</FileType>
               <FilePath>.\Core\Src\RTC.c</FilePath>
             </File>
+            <File>
+              <FileName>pwr.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Core\Src\pwr.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
