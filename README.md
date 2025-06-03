@@ -120,11 +120,11 @@
     <tr>
       <td align="center">
         <img src="picture/pcb_core.PNG" alt="核心板正面" width="300" height="400"><br>
-        <strong>图：核心板正面</strong>
+        图：核心板正面
       </td>
       <td align="center">
         <img src="picture/pcb_back.PNG" alt="核心板背面" width="300" height="400"><br>
-        <strong>图：核心板背面</strong>
+        图：核心板背面
       </td>
     </tr>
   </table>
