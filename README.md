@@ -68,9 +68,9 @@
   &emsp;&emsp;3. 等待80ms待测量完成，如果读取状态字Bit[7]为0，表示测量完成，然后可以连续读取六个字节；否则继续等待。
 
   &emsp;&emsp;4. 当接收完六个字节后，紧接着下一个字节是CRC校验数据，用户可以根据需要读出，如果接收端需要CRC校验，则在接收完第六个字节后发ACK应答，否则发NACK结束，CRC初始值为0xFF，CRC8校验多项式为：
-  $$
-  CRC[7:0] = 1 + x^4 + x^5 + x^8
-  $$
+   <div align=center>
+    <img src="picture/AHT21多项式校验.PNG" alt="image">
+</div>
 
   &emsp;&emsp;5. 计算温湿度值。
   <div align=center>
