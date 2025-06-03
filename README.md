@@ -129,6 +129,21 @@
 
   &emsp;&emsp;4. 避免反复擦写同一区域，有效分散写入负载。
 
+- **蓝牙IAP无线升级**
+  &emsp;&emsp;为实现蓝牙无线升级`IAP`功能，系统将MCU的Flash区域划分为以下三个逻辑分区：
+  - BootLoader区：用于存放启动加载程序以及IAP升级逻辑；
+  - Flag区：用于存放升级表示位与校验信息；
+  - APP区：用于存放主应用程序。
+
+  &emsp;&emsp; 系统上电启动时，首先要由BootLoader执行启动流程，并读取Flag区信息以判断当前APP区中的程序是否合法或是否需要升级；`若Flag区校验通过`，BootLoader将跳转至APP区，执行主应用程序（在这里还需要注意跳转后，需要在主程序的开始设置中断向量表的基地址）。`若校验失败或检测到升级请求标志`（即长按按键），则进入IAP升级模式。
+
+  &emsp;&emsp; 在IAP升级模式下，用户可以在上位机使用蓝牙连接设备，并使用支持ModemY协议的串口升级工具发送新的固件数据。BootLoader将接收并写入新的APP程序至Flash的APP区，完成无线升级。
+  
+  <div align=center>
+        <img src="picture/无线升级分区.PNG" alt="image" width="400" height="100">
+  </div>
+
+
 ## 硬件设计说明
   &emsp;&emsp;硬件设计来自：https://oshwhub.com/no_chicken/zhi-neng-shou-biao-OV-Watch_V2.2 电路部分完全采用该版本设计。本人在打样 PCB 并完成焊接调试后，基于该平台完成功能实现与二次开发。核心板与背板的电路原理图如下：
   <div align="center">
