@@ -167,38 +167,6 @@
           <ExecCommand></ExecCommand>
           <Expression>\\test\Core/Src/stm32f4xx_it.c\177</Expression>
         </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
-          <LineNumber>356</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134237650</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\Core\Src\i2c.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\test\Core/Src/i2c.c\356</Expression>
-        </Bp>
-        <Bp>
-          <Number>2</Number>
-          <Type>0</Type>
-          <LineNumber>544</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134236256</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>.\Middlewares\LVGL\GUI_APP\GUI_APP\src\HomePage.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\test\Middlewares/LVGL/GUI_APP/GUI_APP/src/HomePage.c\544</Expression>
-        </Bp>
       </Breakpoint>
       <WatchWindow1>
         <Ww>
