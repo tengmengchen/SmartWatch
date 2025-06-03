@@ -104,7 +104,7 @@
   &emsp;&emsp;3. 实时时钟设置：包括用户调整后的RTC时间，方便在重新上电后进行时间同步；
 
   - **损耗均衡策略**：由于EEPROM的擦写次数有限，为延长其使用寿命，本系统采用`环形地址偏移策略`实现简单有效的损耗均衡。
-  
+
   &emsp;&emsp;1. 每类数据分配一段连续地址空间作为循环缓冲区；
 
   &emsp;&emsp;2. 每次写入时在上次地址基础上向后偏移固定步长（比如16字节），绕回起始地址形成闭环；
@@ -114,9 +114,10 @@
   &emsp;&emsp;4. 避免反复擦写同一区域，有效分散写入负载。
 
 ## 硬件设计说明
-  &emsp;&emsp;硬件设计来自：https://oshwhub.com/no_chicken/zhi-neng-shou-biao-OV-Watch_V2.2 电路部分完全采用该版本设计。本人在打样 PCB 并完成焊接调试后，基于该平台完成功能实现与二次开发。
+  &emsp;&emsp;硬件设计来自：https://oshwhub.com/no_chicken/zhi-neng-shou-biao-OV-Watch_V2.2 电路部分完全采用该版本设计。本人在打样 PCB 并完成焊接调试后，基于该平台完成功能实现与二次开发。核心板与背板的电路原理图如下：
   <div align=center>
-    <img src="picture/硬件电路.PNG" alt="image" width="400" height="300">
+    <img src="picture/pcb_core.PNG" alt="image" >
+    <img src="picture/pcb_back.PNG" alt="image" width="400" height="300">
 </div>
 
 
