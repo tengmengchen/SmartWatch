@@ -56,7 +56,7 @@
   &emsp;&emsp;&emsp;&emsp;5. 继续按照以上步骤进行遍历，直到操作数栈只剩一个元素。
 
 - **传感器采集任务**
-  - 在这里我将所有的传感器都单独创建一个任务执行。除了lvgl_handler任务优先级较高之外（因为需要保证屏幕刷新正常），其他任务优先级均相同，执行时间片轮转策略或是主动放弃CPU的协作式调度，所有任务交由FreeRTOS的调度器统一管理。
+  &emsp;&emsp;在这里我将所有的传感器都单独创建一个任务执行。除了lvgl_handler任务优先级较高之外（因为需要保证屏幕刷新正常），其他任务优先级均相同，执行时间片轮转策略或是主动放弃CPU的协作式调度，所有任务交由FreeRTOS的调度器统一管理。
   - **LSM303(加速度计与磁力计)**：配置中断实现抬腕检测，定期采集加速度与磁场。
 
   - **AHT21(温湿度传感器)**：周期性采集环境数据，显示在主界面。采样频率由LVGL的定时器频率决定，如果LVGL定时器2s刷新一次，那么采样频率就是0.5Hz。AHT21的采集数据过程如下：
@@ -68,14 +68,14 @@
   &emsp;&emsp;3. 等待80ms待测量完成，如果读取状态字Bit[7]为0，表示测量完成，然后可以连续读取六个字节；否则继续等待。
 
   &emsp;&emsp;4. 当接收完六个字节后，紧接着下一个字节是CRC校验数据，用户可以根据需要读出，如果接收端需要CRC校验，则在接收完第六个字节后发ACK应答，否则发NACK结束，CRC初始值为0xFF，CRC8校验多项式为：
-   <div align=center>
-    <img src="picture/AHT21多项式校验.PNG" alt="image">
-</div>
+    <div align=center>
+      <img src="picture/AHT21多项式校验.PNG" alt="image">
+    </div>
 
   &emsp;&emsp;5. 计算温湿度值。
-  <div align=center>
-    <img src="picture/AHT21数据图.PNG" alt="image" width="400" height="300">
-</div>
+    <div align=center>
+        <img src="picture/AHT21数据图.PNG" alt="image" width="400" height="300">
+    </div>
 
   - **SPL06(气压传感器)**：周期性采集气压数据，并估算海拔高度。
 
