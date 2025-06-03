@@ -29,11 +29,11 @@
   <table>
     <tr>
       <td align="center">
-        <img src="picture/实物图正面.PNG" alt="实物图正面" width="300" height="400"><br>
+        <img src="picture/实物图正面.PNG" alt="实物图正面" width="300" height="280"><br>
         图：核心板正面
       </td>
       <td align="center">
-        <img src="picture/实物图背面.PNG" alt="实物图背面" width="300" height="400"><br>
+        <img src="picture/实物图背面.PNG" alt="实物图背面" width="300" height="280"><br>
         图：核心板背面
       </td>
     </tr>
