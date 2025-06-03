@@ -201,6 +201,7 @@
 .\objects\main.o: .\BSP\Inc\MPU6050.h
 .\objects\main.o: .\BSP\Inc\KEY.h
 .\objects\main.o: .\Core\Inc\RTC.h
+.\objects\main.o: .\Core\Inc\pwr.h
 .\objects\main.o: .\User\Tasks\include\watchtask.h
 .\objects\main.o: .\User\Tasks\include\LVGL_task.h
 .\objects\main.o: .\Middlewares\LVGL\GUI\porting\lv_port_disp.h

@@ -22,6 +22,7 @@
 #include "KEY.h"
 #include "HWDataAccess.h"
 #include "RTC.h"
+#include "pwr.h"
 
 #include "watchtask.h"
 

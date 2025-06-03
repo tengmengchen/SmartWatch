@@ -31,22 +31,27 @@ void RTC_Init(void) {
     RTC->WPR = 0xCA;
     RTC->WPR = 0x53;
     
-    // 3. 进入初始化模式
-    RTC->ISR |= RTC_ISR_INIT;
-    while (!(RTC->ISR & RTC_ISR_INITF)); // 等待 INITF 置 1
-    
-    // 4. 配置 RTC 分频器，生成 1Hz 时钟
-    RTC->PRER = (127 << 16) | (255); // PREDIV_A = 127, PREDIV_S = 255
-    
-    // 5. 配置时间格式 (24小时制)
-    RTC->CR &= ~RTC_CR_FMT;
-    
-    // 6. 设置初始时间和日期
-    RTC->TR = (0 << 22) | (1 << 20) | (6 << 16); // 00:30:45 (24小时制)
-    RTC->DR = (2 << 20) | (5 << 16) | (4 << 13) | (0 << 12) | (5 << 8) | (2 << 4) | (9 << 0); // 2023年4月15日，星期五
-    
-    // 7. 退出初始化模式
-    RTC->ISR &= ~RTC_ISR_INIT;
+    if(RTC->BKP0R != RTC_MAGIC_FLAG)
+    {
+        // 3. 进入初始化模式
+        RTC->ISR |= RTC_ISR_INIT;
+        while (!(RTC->ISR & RTC_ISR_INITF)); // 等待 INITF 置 1
+        
+        // 4. 配置 RTC 分频器，生成 1Hz 时钟
+        RTC->PRER = (127 << 16) | (255); // PREDIV_A = 127, PREDIV_S = 255
+        
+        // 5. 配置时间格式 (24小时制)
+        RTC->CR &= ~RTC_CR_FMT;
+        
+        // 6. 设置初始时间和日期
+        RTC->TR = (0 << 22) | (1 << 20) | (6 << 16); // 00:30:45 (24小时制)
+        RTC->DR = (2 << 20) | (5 << 16) | (4 << 13) | (0 << 12) | (5 << 8) | (2 << 4) | (9 << 0); // 2023年4月15日，星期五
+        
+        // 7. 退出初始化模式
+        RTC->ISR &= ~RTC_ISR_INIT;
+        
+        RTC->BKP0R = RTC_MAGIC_FLAG;
+    }
     
     // 8. 重新启用 RTC 寄存器写保护
     RTC->WPR = 0xFF;
