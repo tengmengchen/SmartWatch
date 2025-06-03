@@ -116,9 +116,9 @@
 ## 硬件设计说明
   &emsp;&emsp;硬件设计来自：https://oshwhub.com/no_chicken/zhi-neng-shou-biao-OV-Watch_V2.2 电路部分完全采用该版本设计。本人在打样 PCB 并完成焊接调试后，基于该平台完成功能实现与二次开发。核心板与背板的电路原理图如下：
   <div align=center>
-    <img src="picture/pcb_core.PNG" alt="image" width="300" height="400">
+    <img src="picture/pcb_core.PNG" alt="image" width="280" height="400">
     <p style="text-align: center;">图：核心板正面</p>
-    <img src="picture/pcb_back.PNG" alt="image" width="300" height="400">
+    <img src="picture/pcb_back.PNG" alt="image" width="280" height="400">
     <p style="text-align: center;">图：核心板背面</p>
   </div>
 
